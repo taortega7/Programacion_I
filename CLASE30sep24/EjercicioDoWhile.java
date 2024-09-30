@@ -1,4 +1,4 @@
-package CLASE30;
+package CLASE30sep24;
 
 public class EjercicioDoWhile {
     public static void main(String[] args) {
