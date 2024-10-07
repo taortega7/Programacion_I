@@ -1,14 +1,14 @@
 public class CONDICIONALESYCICLOS {
     public static void main(String[] args) {
 
-        boolean a = true;
-        boolean b = true;
-        boolean c = true;
-
-        if (!a && (b && c)) {
-            System.out.println("Sentencia if ejecutada");
-        } else {
-            System.out.println("Sentencia else ejecutada");
-        }
+        int marks = 80;
+        if (marks > 70)
+            System.out.println("Distinction");
+        if (marks > 35)
+            System.out.println("Pass");
+        else
+            System.out.println("Fail");
+        System.out.println("Better luck next time");
     }
+
 }
