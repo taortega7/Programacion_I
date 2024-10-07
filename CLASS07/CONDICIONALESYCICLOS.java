@@ -1,12 +1,18 @@
 public class CONDICIONALESYCICLOS {
     public static void main(String[] args) {
 
-        int india_score = 300, pakistan_score = 290;
-        if (india_score > pakistan_score)
-        System.out.println("India Wins");
-        else 
-        System.out.println("Pakistan Wins");
-   
-    System.out.println(india_score > pakistan_score ? "India Wins" : "Pakistan Wins");
-}
+        int a = 7 * 3 + 6 / 2 - 5;
+        int b = 21 - 8 + a % 3 * 11;
+
+        if (a < b) {
+            System.out.println("A is less than B");
+        }
+        if (a == b) {
+            System.out.println("A is equal to B");
+        }
+        if (a > b) {
+            System.out.println("A is greather than B");
+        }
+
+    }
 }
