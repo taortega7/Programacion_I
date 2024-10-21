@@ -44,4 +44,5 @@ class JuegoLucha {
         juego.iniciarPelea();
     }
 
+    
 }
