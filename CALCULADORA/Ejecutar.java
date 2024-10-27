@@ -43,7 +43,7 @@ public class Ejecutar {
                 System.out.println("Opción no válida.");
                 return;
         }
-
+        
         System.out,println("El resultado total es: " + resultado);
 
     }
