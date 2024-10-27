@@ -19,10 +19,10 @@ public class Ejecutar {
         System.out.println("3: Multiplicaciòn");
         System.out.println("4: Divisiòn");
 
-        int opcion = scanner.nexInt();
+        int opcion = scanner.nextInt();
         double resultado = 0; 
 
-        switch  {
+        switch (opcion) {
             case 1:
                 resultado = operaciones.sumar(num1, num2);
                 break;
@@ -44,7 +44,7 @@ public class Ejecutar {
                 return;
         }
         
-        System.out,println("El resultado total es: " + resultado);
+        System.out.println("El resultado total es: " + resultado);
 
     }
 }
