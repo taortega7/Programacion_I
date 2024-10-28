@@ -13,7 +13,7 @@ public class Ejecutar {
         System.out.println("Ingresa tu segundo nùmero: ");
         double num2 = scanner.nextDouble();
 
-        System.out.println("Selecciona que operacion es: ")
+        System.out.println("Selecciona que operacion es: ");
         System.out.println("1: Suma");
         System.out.println("2: Resta");
         System.out.println("3: Multiplicaciòn");

@@ -3,14 +3,18 @@ import java.util.Scanner;
 class JuegoLucha {
     private Personaje jugador1;
     private Personaje jugador2;
+    
 
     public JuegoLucha(String nombre1, String nombre2) {
         this.jugador1 = new Personaje(nombre1);
         this.jugador2 = new Personaje(nombre2);
+
+
     }
 
     public void iniciarPelea() {
-        System.out.println("La pelea comienza entre " + jugador1.getNombre() + " y " + jugador2.getNombre() + "...");
+        System.out.println("La pelea comienza entre " + jugador1.getNombre() + " y " + jugador2.getNombre() + " tiene el arma " + jugador2.AsignarArma());
+      
 
         while (jugador1.estaVivo() && jugador2.estaVivo()) {
             turno(jugador1, jugador2);
@@ -30,6 +34,7 @@ class JuegoLucha {
                 + defensor.getPuntosDeVida());
         atacante.atacar(defensor);
         System.out.println(defensor.getNombre() + " ahora tiene " + defensor.getPuntosDeVida() + " puntos de vida. ");
+    
     }
 
     public static void main(String[] args) {
@@ -39,6 +44,8 @@ class JuegoLucha {
         String nombre1 = scanner.nextLine();
         System.out.print(" Introduce el nombre del jugador 2:");
         String nombre2 = scanner.nextLine();
+
+    
 
         JuegoLucha juego = new JuegoLucha(nombre1, nombre2);
         juego.iniciarPelea();
